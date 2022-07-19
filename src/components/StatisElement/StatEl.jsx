@@ -5,7 +5,7 @@ import { getRandomHexColor } from 'components/Util/FunctColorRandom';
 export const StatEl = ({ label, percentage }) => {
   return (
     <li className={css.item} style={{ backgroundColor: getRandomHexColor() }}>
-      <span className={css.labe}>{label}</span>
+      <span className={css.label}>{label}</span>
       <span className={css.percentage}>{percentage}%</span>
     </li>
   );

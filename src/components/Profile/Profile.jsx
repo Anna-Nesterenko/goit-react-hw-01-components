@@ -9,24 +9,24 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       style={{ backgroundColor: getRandomHexColor() }}
     >
       <div className={css.description}>
-        <img className="avatar" src={avatar} alt={username} width="200" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+        <img className={css.avatar} src={avatar} alt={username} width="180" />
+        <p className={css.name}>{username}</p>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
 
       <ul className={css.stats}>
         <li>
           <span className={css.label}>Followers</span>
-          <span className="quantity">{stats.followers}</span>
+          <span className={css.quantity}>{stats.followers}</span>
         </li>
         <li>
           <span className={css.label}>Views</span>
-          <span className="quantity">{stats.views}</span>
+          <span className={css.quantity}>{stats.views}</span>
         </li>
         <li>
           <span className={css.label}>Likes</span>
-          <span className="quantity">{stats.likes}</span>
+          <span className={css.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
