@@ -1,0 +1,22 @@
+.transaction {
+  margin: 0 auto 20px;
+  box-shadow: 0 0 10px #706d97, 0 0 20px #eee;
+}
+
+th {
+  width: 150px;
+  text-align: center;
+  color: #fff;
+  background-color: #706d97;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 10px;
+  height: 20px;
+}
+
+tr:nth-child(odd) {
+  background-color: #eee;
+}

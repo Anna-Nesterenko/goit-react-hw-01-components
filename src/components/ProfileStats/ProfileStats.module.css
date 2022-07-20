@@ -1,0 +1,24 @@
+.stats {
+  display: flex;
+  justify-content: space-around;
+  border: 1px dashed black;
+}
+.stats > li {
+  padding: 20px;
+  border-right: 1px dashed black;
+}
+
+.stats > li:last-child {
+  border: none;
+}
+
+.name {
+  font-size: 22px;
+}
+
+.label {
+  font-weight: 500;
+}
+.quantity {
+  text-align: center;
+}

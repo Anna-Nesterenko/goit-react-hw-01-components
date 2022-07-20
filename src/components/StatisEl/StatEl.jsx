@@ -3,6 +3,7 @@ import css from './StatEl.module.css';
 import { getRandomHexColor } from 'components/Util/FunctColorRandom';
 
 export const StatEl = ({ label, percentage }) => {
+
   return (
     <li className={css.item} style={{ backgroundColor: getRandomHexColor() }}>
       <span className={css.label}>{label}</span>

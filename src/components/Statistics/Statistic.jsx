@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './Statistic.module.css';
-import { StatEl } from 'components/StatisElement/StatEl';
+import { StatEl } from 'components/StatisEl/StatEl';
 
 export const Statistics = ({ title, stats }) => {
   return (
@@ -19,10 +19,8 @@ export const Statistics = ({ title, stats }) => {
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
-    PropTypes.exact({
+    PropTypes.shape({
       id: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      percentage: PropTypes.number.isRequired,
     })
   ),
 };

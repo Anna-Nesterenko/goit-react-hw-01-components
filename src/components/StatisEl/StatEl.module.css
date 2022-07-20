@@ -1,5 +1,6 @@
 .item {
   text-align: center;
+  border: 1px solid #eee;
 }
 .percentage {
   font-size: 14px;
